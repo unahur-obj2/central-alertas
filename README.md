@@ -61,7 +61,7 @@ Cada entidad:
 - Crear 2 entidades, (e1, e2) (con el comportamiento por defecto)
 - Añadir entidades a la entidades receptoras de alertas.
 
-### Test dadoElSetUp_alAgregarAlertas_SeVerificaCorretamenteLasAlertasRecibidasYElRiesgo
+### Test #1 - dadoElSetUp_alAgregarAlertas_SeVerificaCorretamenteLasAlertasRecibidasYElRiesgo
 
 - dado el SetUp incial
 - Se Agregan 2 alertas, calor con un valor de 6 y lluvia con un nivel de 8
@@ -70,7 +70,7 @@ Cada entidad:
   - Cada entidad haya recibido ambas alertas
   - Que el riesgo de cada entidad sea 10
 
-### Test dadoElSetUp_alCambiarElComportamientoYAgregarAlertas_SeVerificaCorretamenteLasAlertasRecibidasYElRiesgo
+### Test #2 - dadoElSetUp_alCambiarElComportamientoYAgregarAlertas_SeVerificaCorretamenteLasAlertasRecibidasYElRiesgo
 
 - dado el SetUp incial
 - cambiar el comportamiento a Riesgo Promedio de la entidad e1
@@ -81,7 +81,7 @@ Cada entidad:
   - Que el riesgo de la entidad e1 sea igual a 7
   - Que el riesgo de la entidad e2 sea igual a 10
 
-### Test dadoElSetUp_alAgregarAlertasQuitarUnaEntidadYAgregaNuevaAlerta_SeVerificaCorretamenteLasAlertasRecibidasYElRiesgo
+### Test #3 - dadoElSetUp_alAgregarAlertasQuitarUnaEntidadYAgregaNuevaAlerta_SeVerificaCorretamenteLasAlertasRecibidasYElRiesgo
 
 - dado el SetUp incial
 - Agregar 2 alertas, calor con un valor de 6 y lluvia con un nivel de 8
@@ -93,7 +93,7 @@ Cada entidad:
   - La entidad e2 tiene 3 alertas y riesgo 7.
   - La cantidad de Alertas enviadas a las entidades es 5.
 
-### Test Excepción:
+### Test #4 - Excepción:
 
 Si se intenta emitir una alerta con nivel 0, 11, o negativo, el sistema debe lanzar una excepción con el mensaje "Nivel de alerta incorrecto".
 
